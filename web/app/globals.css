@@ -265,6 +265,29 @@ blockquote.quote-block { margin: 12px 0; }
 .mini .card-title { font-size: 14px; line-height: 20px; }
 .mini .meta { font-size: 12px; line-height: 18px; }
 
+/* ---------- app-wide player: over the page's slot, or docked as a mini player ---------- */
+.gp { position: absolute; z-index: 5; background: #000; border-radius: var(--radius); overflow: hidden; }
+.gp-video { position: relative; width: 100%; aspect-ratio: 16 / 9; }
+.gp-inline .gp-video { height: 100%; aspect-ratio: auto; }
+.gp-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.gp-bar { display: none; }
+.gp-mini {
+  position: fixed; right: 16px; bottom: 16px; width: 400px; z-index: 45;
+  background: var(--bg-raised); border: 1px solid var(--border);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+  animation: gp-in 0.18s ease-out;
+}
+.gp-mini .gp-bar { display: flex; align-items: center; gap: 2px; padding: 8px 6px 8px 12px; }
+.gp-text { display: flex; flex-direction: column; min-width: 0; flex: 1; margin-right: 4px; }
+.gp-title { font-weight: 500; font-size: 14px; line-height: 20px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gp-channel { color: var(--text-2); font-size: 12px; line-height: 18px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gp-text:hover .gp-title { text-decoration: underline; }
+@keyframes gp-in { from { opacity: 0; transform: translateY(12px); } }
+@media (prefers-reduced-motion: reduce) { .gp-mini { animation: none; } }
+@media (max-width: 700px) {
+  .gp-mini { left: 8px; right: 8px; bottom: 8px; width: auto; }
+}
+
 /* ---------- categories page ---------- */
 .area { margin-bottom: 32px; }
 .area h2 { font-size: 20px; margin: 0 0 12px; display: flex; gap: 10px; align-items: baseline; }

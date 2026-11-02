@@ -1,26 +1,26 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { usePlayer } from "./PlayerProvider";
 import { Icon } from "./Icon";
 import { useToast } from "./Shell";
 import { avatarColor, hnUrl, poster, STANCE_LABEL, ytUrl } from "@/lib/format";
 import { pushHistory, toggle, useList } from "@/lib/store";
 import type { Mention } from "@/lib/types";
 
-export function Player({ vid, title }: { vid: string; title: string }) {
-  const [playing, setPlaying] = useState(false);
+/** The page's player area. The video itself plays in the app-wide player, which sits over this slot. */
+export function Player({ vid, title, channel }: { vid: string; title: string; channel: string }) {
+  const { now, play, slot } = usePlayer();
+  const ref = useRef<HTMLDivElement>(null);
   useEffect(() => pushHistory(vid), [vid]);
+  useEffect(() => {
+    slot(vid, ref.current);
+    return () => slot(vid, null);
+  }, [vid, slot]);
   return (
-    <div className="player">
-      {playing ? (
-        <iframe
-          src={`https://www.youtube-nocookie.com/embed/${vid}?autoplay=1&rel=0`}
-          title={title}
-          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-          allowFullScreen
-        />
-      ) : (
-        <button className="poster-btn" onClick={() => setPlaying(true)} aria-label={`Play ${title}`}>
+    <div className="player" ref={ref}>
+      {now?.vid !== vid && (
+        <button className="poster-btn" onClick={() => play({ vid, title, channel })} aria-label={`Play ${title}`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={poster(vid)} alt="" />
           <span className="play">

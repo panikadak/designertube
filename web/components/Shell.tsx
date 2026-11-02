@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { Icon, type IconName } from "./Icon";
+import { PlayerProvider } from "./PlayerProvider";
 import { useSetting } from "@/lib/store";
 
 const NAV: { href: string; label: string; icon: IconName }[] = [
@@ -105,6 +106,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
 
   return (
     <ToastCtx.Provider value={showToast}>
+      <PlayerProvider>
       <div className={`app${open ? " open" : ""}${collapsed ? " collapsed" : ""}`}>
         <header className="topbar">
           <div className="topbar-left">
@@ -180,6 +182,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
         )}
         {toast && <div className="toast" role="status">{toast}</div>}
       </div>
+      </PlayerProvider>
     </ToastCtx.Provider>
   );
 }

@@ -68,7 +68,7 @@ export default async function WatchPage(props: PageProps<"/watch/[vid]/[slug]">)
       <JsonLd data={videoJsonLd(v, ms)} />
       <JsonLd data={breadcrumbJsonLd(crumbs)} />
       <article>
-        <Player key={v.vid} vid={v.vid} title={v.title} />
+        <Player key={v.vid} vid={v.vid} title={v.title} channel={v.channel} />
         <nav className="crumbs" aria-label="Breadcrumb">
           {crumbs.slice(1, -1).map((c, i) => (
             <span key={c.path}>
