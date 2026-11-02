@@ -1,4 +1,6 @@
 import type { Metadata, Viewport } from "next";
+import { Suspense } from "react";
+import { Analytics } from "@vercel/analytics/next";
 import { JsonLd } from "@/components/JsonLd";
 import { Shell } from "@/components/Shell";
 import { websiteJsonLd } from "@/lib/seo";
@@ -35,6 +37,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body>
         <Shell>{children}</Shell>
+        {/* cookieless page-view counts; reads search params, so it needs its own Suspense boundary */}
+        <Suspense fallback={null}>
+          <Analytics />
+        </Suspense>
       </body>
     </html>
   );

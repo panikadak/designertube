@@ -117,6 +117,7 @@ Every page has its own generated 1200×630 Open Graph image: one per video, topi
 | Site | Next.js 16 (App Router, Cache Components, Partial Prefetching), React 19, TypeScript, plain CSS |
 | Hosting | Vercel: ~3,600 prerendered pages and three small JSON routes for the feed, search and lists |
 | Video metadata | YouTube oEmbed (no key) and the YouTube Data API for upload dates, durations and views |
+| Analytics | Vercel Web Analytics: cookieless page-view counts, no personal identifiers |
 
 There is no database. The dataset ships as JSON in [`web/data/`](web/data) and is read by server components and route handlers.
 

@@ -119,7 +119,8 @@ export default function About() {
       <h2>Privacy</h2>
       <p>
         There are no accounts. Your likes, history and Watch later list are stored only in this browser. Videos play
-        through YouTube&apos;s privacy-enhanced embed.
+        through YouTube&apos;s privacy-enhanced embed. Page views are counted with Vercel Web Analytics, which uses no
+        cookies and stores no personal identifiers.
       </p>
 
       <h2>Credits</h2>
