@@ -1,0 +1,102 @@
+{
+  "note": "Seed taxonomy. Used for the design prefilter and as the starting point for card classification; refined after labeling.",
+  "areas": [
+    {"id": "ux-research", "name": "UX & Research", "topics": [
+      {"id": "ux-process", "name": "UX process & practice", "description": "User experience design process: discovery, personas, user journeys, jobs to be done, design sprints, lean UX, UX strategy, how UX designers work."},
+      {"id": "user-research", "name": "User research & usability", "description": "User research methods, interviews, ethnography, usability testing, A/B testing for design, Nielsen Norman Group, heuristics, eye tracking, measuring UX."},
+      {"id": "information-architecture", "name": "Information architecture & navigation", "description": "Information architecture, navigation, menus, search UX, findability, taxonomies, content structure, sitemaps."},
+      {"id": "ux-writing", "name": "UX writing & content design", "description": "UX writing, microcopy, content design, error messages, voice and tone, plain language, documentation design."},
+      {"id": "ethics-dark-patterns", "name": "Design ethics & dark patterns", "description": "Dark patterns, deceptive design, attention economy, addictive design, persuasive technology, humane technology, ethics of design, manipulation in apps."},
+      {"id": "cognitive-psychology", "name": "Psychology for designers", "description": "Cognitive psychology applied to design: perception, Gestalt principles, attention, memory, mental models, affordances, Don Norman, Fitts's law, Hick's law."}
+    ]},
+    {"id": "interaction", "name": "Interaction & Interface Design", "topics": [
+      {"id": "ui-design", "name": "UI design craft", "description": "User interface design: visual UI, layout of screens, buttons, forms, icons, app design, polish, details, pixel perfection, UI critique and redesigns."},
+      {"id": "interaction-design", "name": "Interaction design", "description": "Interaction design: direct manipulation, gestures, feedback, microinteractions, transitions, interaction patterns, modes, undo, responsiveness, feel of software."},
+      {"id": "mobile-touch", "name": "Mobile & touch interfaces", "description": "Mobile app design, touch interfaces, iPhone and Android UI, multitouch, tablet interaction, watch and small-screen design."},
+      {"id": "input-devices", "name": "Input devices & novel interfaces", "description": "Mouse, cursor, keyboard design, pen input, tangible interfaces, voice interfaces, gesture control, novel input, brain-computer and haptic interfaces."},
+      {"id": "ai-interfaces", "name": "AI & conversational interfaces", "description": "Designing interfaces for AI, chatbots, LLM UX, conversational design, agents, generative design tools, human-AI interaction."},
+      {"id": "spatial-interfaces", "name": "Spatial, VR & AR interfaces", "description": "VR and AR interface design, spatial computing UX, 3D interfaces, immersive experience design, dynamic spatial media."},
+      {"id": "developer-tools-ux", "name": "Tools for thought & programming UX", "description": "Tools for thought, end-user programming, live programming, explorable environments, Bret Victor, visual programming, creative tools, designing for creativity, interface of programming."}
+    ]},
+    {"id": "hci-history", "name": "HCI & Interface History", "topics": [
+      {"id": "gui-history", "name": "GUI history", "description": "History of the graphical user interface: Xerox PARC, Alto, Smalltalk, Macintosh, Windows, NeXT, Lisa, desktop metaphor, history of UI design."},
+      {"id": "hci-pioneers", "name": "HCI pioneers & visionary demos", "description": "Douglas Engelbart's Mother of All Demos, Ivan Sutherland Sketchpad, Alan Kay, Ted Nelson, Vannevar Bush, Jef Raskin, visionary interface demos and interviews."},
+      {"id": "hci-research", "name": "HCI research", "description": "Human-computer interaction research, CHI talks, academic HCI, interaction techniques, user interface software research."}
+    ]},
+    {"id": "visual", "name": "Visual & Graphic Design", "topics": [
+      {"id": "graphic-design", "name": "Graphic design", "description": "Graphic design practice, posters, editorial design, book design, album covers, print design, visual communication, Swiss style, modernist graphic design."},
+      {"id": "layout-grids", "name": "Layout, grids & composition", "description": "Layout, grid systems, composition, visual hierarchy, whitespace, alignment, balance, page design."},
+      {"id": "color", "name": "Color", "description": "Color theory, color perception, palettes, color spaces for designers, contrast, color in interfaces and art."},
+      {"id": "illustration-icons", "name": "Illustration & iconography", "description": "Illustration, icon design, pictograms, pixel art icons, infographics illustration, drawing for designers."},
+      {"id": "photography-image", "name": "Photography & image making", "description": "Photography as visual craft, image composition, visual aesthetics, photo editing, art direction."}
+    ]},
+    {"id": "typography", "name": "Typography & Type Design", "topics": [
+      {"id": "typography", "name": "Typography", "description": "Typography, typesetting, readability, legibility, line length, kerning, typographic hierarchy, web typography, books on typography."},
+      {"id": "type-design", "name": "Type design & fonts", "description": "Type design, making typefaces, font history, Helvetica, Futura, Univers, type foundries, variable fonts, font engineering for designers."},
+      {"id": "lettering-calligraphy", "name": "Lettering & calligraphy", "description": "Lettering, calligraphy, sign painting, hand lettering, letterpress, type specimens."}
+    ]},
+    {"id": "branding", "name": "Branding & Identity", "topics": [
+      {"id": "logo-identity", "name": "Logos & visual identity", "description": "Logo design, visual identity systems, corporate identity, Paul Rand, Saul Bass, Massimo Vignelli, Pentagram, rebrands, brand guidelines."},
+      {"id": "brand-strategy", "name": "Brand strategy & advertising", "description": "Brand strategy, advertising design, marketing design, campaigns, packaging design, naming."}
+    ]},
+    {"id": "design-systems", "name": "Design Systems & Web Design", "topics": [
+      {"id": "design-systems", "name": "Design systems", "description": "Design systems, component libraries, design tokens, pattern libraries, style guides, atomic design, scaling design across teams, Material Design, Human Interface Guidelines."},
+      {"id": "web-design", "name": "Web design", "description": "Web design, responsive design, website layout, landing pages, the craft of designing for the web, web aesthetics, brutalist web design."},
+      {"id": "css-frontend-craft", "name": "CSS & front-end design craft", "description": "CSS for designers, layout with CSS grid and flexbox, design engineering, front-end craft, animations in CSS, design-to-code, design engineers."},
+      {"id": "design-dev-collab", "name": "Design–engineering collaboration", "description": "Designers and developers working together, handoff, prototyping in code, design engineering roles."}
+    ]},
+    {"id": "service-strategy", "name": "Service Design & Design Strategy", "topics": [
+      {"id": "service-design", "name": "Service design", "description": "Service design, service blueprints, customer journeys across touchpoints, omnichannel experience, designing services not screens."},
+      {"id": "public-sector-design", "name": "Government & civic design", "description": "Government digital services, GDS, civic tech design, public sector design, designing forms and services for citizens, healthcare UX."},
+      {"id": "systems-thinking", "name": "Systems thinking & complexity", "description": "Systems thinking for designers, designing complex systems, leverage points, sociotechnical systems, unintended consequences, design of organizations."},
+      {"id": "design-thinking", "name": "Design thinking & innovation", "description": "Design thinking, IDEO, innovation process, human-centered design, co-design, participatory design, critique of design thinking."},
+      {"id": "design-leadership", "name": "Design leadership & org", "description": "Design leadership, design management, building design teams, design culture in companies, design at Apple, Google, Airbnb, design maturity, design ops."},
+      {"id": "product-design", "name": "Product design & product thinking", "description": "Digital product design, product thinking, simplicity in products, feature design, prioritization from a design view, designing products people love."}
+    ]},
+    {"id": "industrial", "name": "Product & Industrial Design", "topics": [
+      {"id": "industrial-design", "name": "Industrial design", "description": "Industrial design, physical product design, Dieter Rams, Braun, Jony Ive, Apple hardware design, consumer product design, design for manufacturing."},
+      {"id": "everyday-objects", "name": "Design of everyday things", "description": "Design of everyday objects, doors, appliances, cars dashboards, controls, bad design examples, Don Norman doors, affordances in physical objects."},
+      {"id": "furniture-objects", "name": "Furniture & object design", "description": "Furniture design, chairs, Eames, mid-century modern, craft and making objects, materials and design."},
+      {"id": "automotive-transport-design", "name": "Vehicle & transport design", "description": "Car design, vehicle interiors, cockpit design, transport design, aviation cockpit design, train and bus design."}
+    ]},
+    {"id": "architecture", "name": "Architecture & Spaces", "topics": [
+      {"id": "architecture", "name": "Architecture", "description": "Architecture, buildings, architects, architectural design, modernism, brutalism, Christopher Alexander, A Pattern Language, timeless way of building."},
+      {"id": "urban-design", "name": "Urban design & public space", "description": "Urban design, public space, street design, walkable cities, design of places, placemaking (not transit policy or economics)."},
+      {"id": "wayfinding-signage", "name": "Wayfinding & signage", "description": "Wayfinding, signage systems, transit maps, airport signage, environmental graphic design, maps design."},
+      {"id": "interior-exhibition", "name": "Interiors & exhibition design", "description": "Interior design, exhibition design, museum design, retail spaces, set design."}
+    ]},
+    {"id": "information-design", "name": "Information Design & Data Viz", "topics": [
+      {"id": "data-visualization", "name": "Data visualization", "description": "Data visualization, charts, Edward Tufte, visualization principles, D3, dashboards design, visual encoding, statistical graphics."},
+      {"id": "explorable-explanations", "name": "Explorable explanations & visual explanation", "description": "Explorable explanations, interactive essays, visual explanations, teaching with visuals, animated explainers as design."},
+      {"id": "maps-cartography", "name": "Maps & cartography", "description": "Cartography, map design, projections from a design perspective, map typography, subway maps."}
+    ]},
+    {"id": "motion", "name": "Motion, Animation & Film Craft", "topics": [
+      {"id": "animation-principles", "name": "Animation principles", "description": "Principles of animation, Disney 12 principles, character animation, timing, easing, animation craft, Pixar process."},
+      {"id": "motion-design", "name": "Motion graphics & title design", "description": "Motion graphics, title sequences, Saul Bass titles, kinetic typography, broadcast design, UI motion design."},
+      {"id": "visual-storytelling", "name": "Visual storytelling & cinematography", "description": "Visual storytelling, cinematography, editing, framing, film language, storyboarding, comics design, Every Frame a Painting."}
+    ]},
+    {"id": "game-design", "name": "Game Design", "topics": [
+      {"id": "game-design", "name": "Game design", "description": "Game design, game mechanics, level design, game feel, juice, player experience, game UX, puzzle design, designing fun."},
+      {"id": "game-art-ui", "name": "Game art & UI", "description": "Game art direction, game UI and HUD design, visual style of games, pixel art."}
+    ]},
+    {"id": "creative-coding", "name": "Creative Coding & Generative Art", "topics": [
+      {"id": "generative-art", "name": "Generative art", "description": "Generative art, algorithmic art, procedural generation as art, plotter art, Processing, p5.js, creative coding."},
+      {"id": "shaders-visual-programming", "name": "Shaders & real-time visuals", "description": "Shader art, real-time graphics as visual design, demoscene aesthetics, visual effects coding, live visuals."},
+      {"id": "computational-design", "name": "Computational & parametric design", "description": "Computational design, parametric design, design tools built in code, generative design for products and architecture."}
+    ]},
+    {"id": "theory-history", "name": "Design Theory & History", "topics": [
+      {"id": "design-history", "name": "Design history", "description": "Design history, Bauhaus, modernism, Ulm school, history of graphic and industrial design, design movements, design documentaries."},
+      {"id": "design-philosophy", "name": "Design philosophy & principles", "description": "Design philosophy, what good design is, simplicity, form follows function, less but better, aesthetics, beauty, taste, craftsmanship, quality."},
+      {"id": "designer-profiles", "name": "Designer profiles & interviews", "description": "Interviews and profiles of designers, design legends talking about their work, studio visits, design documentaries about a person."},
+      {"id": "design-critique", "name": "Design critique & analysis", "description": "Design critique, analysis of why designs work or fail, redesign breakdowns, design reviews, essays on design."}
+    ]},
+    {"id": "accessibility", "name": "Accessibility & Inclusive Design", "topics": [
+      {"id": "accessibility", "name": "Accessibility", "description": "Accessibility, a11y, screen readers, designing for blind and low-vision users, WCAG, assistive technology, inclusive design, designing for disability."}
+    ]},
+    {"id": "tools-practice", "name": "Design Tools & Practice", "topics": [
+      {"id": "design-tools", "name": "Design tools", "description": "Design software: Figma, Sketch, Photoshop, Illustrator, Framer, history of design tools, building design tools, multiplayer design tools."},
+      {"id": "prototyping", "name": "Prototyping", "description": "Prototyping, sketching, paper prototypes, rapid prototyping, wireframing, Origami, prototyping hardware and software."},
+      {"id": "design-career", "name": "Design careers & craft", "description": "Design careers, portfolios, becoming a designer, design education, creative process, creativity talks, design studio life, freelancing."}
+    ]}
+  ]
+}

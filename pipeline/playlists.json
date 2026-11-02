@@ -1,0 +1,110 @@
+[
+  {
+    "id": "start-here",
+    "name": "Start here: the essential design talks",
+    "description": "The most broadly loved videos in the collection, ordered from a way of seeing, through how things get made, to the tools and cities we live with. If you only watch one playlist, make it this one.",
+    "vids": ["D1R-jKKp3NA", "nJPERZDfyWc", "0fKBhvDjuy0", "hUhisi2FBuw", "UEfP1OKKz_Q", "PUv66718DII", "Fy0aCDmgnxg", "hVimVzgtD6w", "dKx1wnXClcI", "ORzNZUeUHAM", "AvEqfg2sIH0", "98LdFA-_zfA", "YThelfB2fvg", "yJDv-zdhzMY", "VQKMoT-6XSg", "jVkLVRt6c1U"]
+  },
+  {
+    "id": "hidden-gems",
+    "name": "Hidden gems: films and talks you probably missed",
+    "description": "Quiet, lower-profile favorites: vanishing crafts, mid-century design films, forgotten identity work and small human stories about making things. Start with the hand-made crafts and work toward the strange machines.",
+    "vids": ["Vyga8VMWXKg", "4RWcWSN4HhI", "jAhiMCSvtCc", "EsIo57pH-pA", "CwrePe4-ID4", "1MGjFKs9bnU", "2N9RCQjPqh4", "Lo_1pyQ7xvc", "SaLFRPEGS1w", "xKu2de0yCJI", "0wxc3mKqKTk", "csalhuSixQU", "EVQHeowMdjI", "9sKKan_Q9VU", "WB2-2j9e4co", "5q-BH-tvxEg", "lX6JcybgDFo", "Clgl63CWOkM"]
+  },
+  {
+    "id": "how-the-gui-was-invented",
+    "name": "How the GUI was invented",
+    "description": "From Sketchpad and the Alto to the Star, Lisa, Macintosh, NeXT and Windows, then the first pocket computers and multi-touch. Primary-source demos and the people who built them, in roughly chronological order.",
+    "vids": ["fHMPGhezj0s", "6orsmFndx_o", "yJDv-zdhzMY", "uknEhXyZgsg", "2Z43y94Dfzk", "Cn4vC80Pv6Q", "ODZBL80JPqw", "pBiWtJJN5zk", "OW-atKrg0T4", "ferle2Uovks", "Qg0mHFcB510", "psAeTDYezdo", "x_q50tvbQm4", "-syl7m_i-80", "j02b8Fuz73A", "vqt94b8bNVc", "DgJS2tQPGKQ", "7PpTVrWSMlY", "1CsTH9S79qI", "ac0E6deG4AU"]
+  },
+  {
+    "id": "tools-for-thought",
+    "name": "Tools for thought: from Engelbart to Bret Victor",
+    "description": "The long argument that computers should amplify human thinking, from Engelbart, Kay and Nelson through HyperCard and VisiCalc to Bret Victor and the live-programming dreamers. Foundations first, then the modern experiments.",
+    "vids": ["xQx-tuW9A4Q", "_7ZtISeGyCY", "oKg1hTOQXoY", "p2LZLYcu_JY", "NdSD07U5uBs", "id1WShzzMCQ", "KdnGPQaICjk", "1iAJPoc23-M", "FquNpWdf9vg", "YDvbDiJZpy0", "PUv66718DII", "ZfytHvgHybA", "agOdP2Bmieg", "oUaOucZRlmE", "8pTEmbeENF4", "klTjiXjqHrQ", "PixPSNRDNMU", "VZQoAKJPbh8", "5V1ynVyud4M", "8Ab3ArE8W3s", "bJ3i4K3hefI"]
+  },
+  {
+    "id": "jobs-ive-and-apple",
+    "name": "Steve Jobs, Jony Ive and Apple's design culture",
+    "description": "How Apple talked about taste, focus and product, from the 1980 pitch and the Macintosh through Think Different, the iPod and the iPhone, with Jony Ive and Tony Fadell on the craft behind it.",
+    "vids": ["0lvMgMrNDlg", "ob_GX50Za6c", "2B-XwPjn9YY", "OYecfV3ubP8", "xb8idEf-Iak", "upzKj-1HaKw", "NlBjNmXvqIM", "vmG9jzCHtSQ", "H8eP99neOVs", "4oAB83Z1ydE", "P4VBqTViEx4", "Ko4V3G4NqII", "kN0SVBCJqLs", "e1KD7DdnRb8", "VQKMoT-6XSg", "24O00Jz8R04", "5xDRdWFdsoQ", "GnGI76__sSA", "xk3UcgbbmxQ", "9uOMectkCCs", "D1R-jKKp3NA"]
+  },
+  {
+    "id": "designers-in-their-own-words",
+    "name": "Designers and makers in their own words",
+    "description": "Paul Rand, Milton Glaser, Susan Kare and Inge Druckrey on how they see, followed by honest talks on taste, fear, luck and keeping going as a creative person.",
+    "vids": ["ldSkPqZKBl0", "Ta4ef1xBeMA", "CqkHigmtEEY", "4lx9Wtd2P48", "zH2dFXDMwe4", "MNuOmTQdFjA", "49p1JVLHUos", "X2wLP0izeJE", "RYlCVwxoL_g", "l_F9jxsfGCw", "3GVO-MfIl1Q", "ikAb-NYkseI", "86x-u-tz0MA", "Lk0hSeQ5s_k", "d-53tzx69fM", "k2h2lvhzMDc", "bEg5ySTUGxE", "ivKnj9ffcmE"]
+  },
+  {
+    "id": "game-feel-and-teaching-players",
+    "name": "Game feel, level design and teaching players",
+    "description": "Juice, screenshake and camera logic, then how Nintendo and Valve teach you to play without a tutorial. The most transferable lessons in game design for anyone designing interfaces.",
+    "vids": ["Fy0aCDmgnxg", "AJdEqssNZ-U", "yorTG9at90g", "KPoeNZZ6H4s", "TCIMPYM0AQg", "2u6HTG8LuXQ", "K-NBcP0YUQI", "zRGRJRUWafY", "ZH2wGpEZVgE", "8FpigqfcvlM", "MMggqenxuZc", "-GV814cWiAw", "ax7f3JZJHSw", "9Yomqk0C6kE", "AYEWsLdLmcc", "ataGotQ7ir8", "Lm_AzK27mZY", "nsxoZXaYJSk"]
+  },
+  {
+    "id": "game-designers-on-their-craft",
+    "name": "Game designers on their craft",
+    "description": "Design philosophies from Will Wright, Sid Meier, Miyamoto and Jonathan Blow, then GDC postmortems of classic games from Pitfall to Deus Ex. Learn how designers decide what to build, and what they got wrong.",
+    "vids": ["zyVTxGpEO30", "MtzCLd93SyU", "CdgQyq3hEPo", "a9DlhDRZ0yA", "QHHg99hwQGY", "AxFzf6yIfcc", "C5FUtrmO7gI", "MBT1OK6VAIU", "AJ-auWfJTts", "CjE4JyfMVLc", "JFaOYYSxSEA", "NnkCujnYNSo", "VscdPA6sUkc", "T2OxO-4YLRk", "tffX3VljTtI", "lnnsDi7Sxq0", "ikaqus5_QIg", "VdqhHKjepiE", "VAhHkJQ3KgY"]
+  },
+  {
+    "id": "designing-cities-for-people",
+    "name": "Designing cities for people",
+    "description": "Jan Gehl and Jeff Speck on the human scale, why North American streets and suburbs are built the way they are, and what the Dutch and Japanese do differently. Street design as the biggest UX problem there is.",
+    "vids": ["9_x5Hor2MP8", "Wai4ub90stQ", "Hy4QjmKzF1c", "AOc8ASeHYNw", "Q1ZeXnmDZMQ", "odF4GSX1y3c", "ORzNZUeUHAM", "y_SXXTBypIg", "7IsMeKl-Sv0", "CCOdQsZa15o", "bnKIVX968PQ", "iRdwXQb7CfM", "wfm2xCKOCNk", "zysL_lkdtys", "bglWCuCMSWc", "XuBdf9jYj7o", "l0GA901oGe4", "9OfBpQgLXUc", "c1l75QqRR48", "XpQMgbDJPok", "ZORzsubQA_M", "CTV-wwszGw8"]
+  },
+  {
+    "id": "the-design-of-everyday-things",
+    "name": "The design of everyday things",
+    "description": "Toasters, switches, doors, bottles and turn signals taken apart to show why good design feels invisible and bad design is everywhere. Ends with two cautionary tales about getting it wrong.",
+    "vids": ["yY96hTb8WgI", "1OfxlSG6q5Y", "bLk1cjZ4ll0", "RSTNhvDGbYI", "UiS27feX8o0", "Limpr1L8Pss", "jrMiqEkSk48", "i_mLxyIXpSY", "tURHTuKHBZs", "kU_gH36GG58", "GiYO1TObNz8", "O1lZ9n2bxWA", "U0YW7x9U5TQ", "c2J91UG6Fn8", "2lFzqBt3z0w", "H2ZBSFiuWIo", "pUF5esTscZI", "5ODzO7Lz_pw", "_Cp-BGQfpHQ", "2K5Gqp1cEcM"]
+  },
+  {
+    "id": "typography-and-type-design",
+    "name": "Typography and type design",
+    "description": "From practical rules for setting type and the history of writing to the people who draw typefaces, build pixel fonts and typesetters, plus a few jokes at Papyrus and Comic Sans' expense.",
+    "vids": ["8J6HuvosP0s", "wOgIkxAfJsk", "Zu91meda2I8", "hbIZX6tE9JY", "kVD-sjtFoEI", "SDI8ubVZi7w", "RTB5XhjbgZA", "1PyfwbXWaUk", "5b6g8eT0uuc", "Sw0syzCeH4Q", "XGo4PJd1lng", "0LR_lBEy7qU", "KSEoHLnIXYk", "4X4f83C8ANg", "jVhlJNJopOQ", "Q8PdffUfoF0", "xHCu28bfxSI", "J7E-aoXLZGY", "y4sOfO8Ei1g", "HLRdruqQfRk"]
+  },
+  {
+    "id": "data-visualization-classics",
+    "name": "Data visualization classics",
+    "description": "Hans Rosling and the perception research behind good charts, the ways graphs lie, and some of the most memorable animated maps and visualizations ever made.",
+    "vids": ["fSgEeI2Xpdc", "xAoljeRJ3lU", "jbkSRLYSojo", "RUwS1uAdUcI", "fTznEIZRkLg", "u4L130DkdOw", "14VYnFhBKcY", "O-3Mlj3MQ_Q", "iwzzv1biHv8", "_0QMKFzW9fw", "DwKPFT-RioU", "LLCF7vPanrY", "rC2VQ-oyDG0", "17jymDn0W6U", "fThhbt23SGM", "9uaHRWj04D4", "ef2jpjTEB5U", "swCy6pQSEpk", "Q0zEXdDO5JU", "JheGL6uSF-4"]
+  },
+  {
+    "id": "color-from-physics-to-pixels",
+    "name": "Color, from physics to pixels",
+    "description": "How people name colors, why RGB blending goes wrong, what perceptual color spaces fix, and how game artists and scientists work around the limits of screens.",
+    "vids": ["gMqZR3pqMjg", "2TtnD4jmCDQ", "wh4aWZRtTwU", "LKnqECcg6Gw", "uYbdx4I7STg", "gnUYoQ1pwes", "nJlZT5AE9zY", "fv-wlo8yVhk", "AS1OHMW873s", "_qa5iWdfNKg", "m9AT7H4GGrA", "xAoljeRJ3lU", "aMcJ1Jvtef0", "niKblgZupOc", "j68UW21Nx6g", "HmStJQzclHc", "rApTzWboLrA", "VckU9UXI_XE"]
+  },
+  {
+    "id": "dark-patterns-and-design-ethics",
+    "name": "Dark patterns and design ethics",
+    "description": "Mike Monteiro and Tristan Harris on responsibility, then a tour of how apps, social networks and free-to-play games manipulate people, and a couple of short films on where it leads.",
+    "vids": ["qIcM21l61TE", "jT5rRh9AZf4", "C74amJRp730", "ZRrguMdzXBw", "kxkrdLI6e6M", "MPyJBJTHyO0", "T4Upf_B9RLQ", "tWtvrPTbQ_c", "lHcTKWiZ8sI", "SqFu5O-oPmU", "xNjI03CGkb4", "7S-DGTBZU14", "o17lBUZgjTs", "OCkO8mNK3Gg", "E8Lhqri8tZk", "keoRX-Lni5s", "kgw8RLHv1j4", "YJg02ivYzSs", "pq7NLMwynYg"]
+  },
+  {
+    "id": "designing-for-everyone-accessibility",
+    "name": "Designing for everyone: accessibility",
+    "description": "Practical web accessibility, then people who are blind, deaf or disabled showing how they actually use software, games and cities. Better than any checklist for building empathy.",
+    "vids": ["vK1tlLOavvM", "izrC4R7SsH4", "AmUPhEVWu_E", "5R-6WvAihms", "G1r55efei5c", "94swlF55tVc", "P1e7ZCKQfMA", "8CAafjodkyE", "R2mC-NUAmMk", "4NGe4dzlukc", "xrqdU4cZaLw", "ObhvacfIOg0", "-IhQl1CBj9U", "rVc_0dUxlsQ", "cdPymLgfXSY", "6SL6zs2bDks", "JQ0iMulicgg", "YKuRkGkf5HU", "8SkdfdXWYaI", "qSKBtEBRWi4"]
+  },
+  {
+    "id": "ui-critique-and-craft",
+    "name": "UI critique and craft",
+    "description": "Steve Schoger's redesign screencasts and spacing lessons, then Tantacrul and others dissecting real products. Learn to see what is wrong with an interface and how teams fix it.",
+    "vids": ["S6-q5BheEYU", "5gdYHlYAKDY", "BMHUKij1yUE", "9ElrcTtAxzA", "r2CbbBLVaPk", "dKx1wnXClcI", "4hZxo96x48A", "S-3wEC6Fj_8", "7PFRyONURSo", "WTYet-qf1jo", "v4boTbv9_nU", "gE8ZikfrpFU", "PsVwpD5bOKE", "AItTqnTsVjA", "RZp7BvQJnU8", "76b3c_ssyPQ", "Tl9kD693ie4", "HmgtW2Iw-kE", "WSMFnJnY7EA", "Qct6LKbneKQ"]
+  },
+  {
+    "id": "code-as-a-creative-medium",
+    "name": "Code as a creative medium: shaders, demos and generative art",
+    "description": "From Bezier curves and shader basics to Inigo Quilez painting with math, the demoscene's 4k and 64k masterpieces, and generative art. A tour of what a few lines of code can draw.",
+    "vids": ["6avJHaC3C2U", "aVwxzDHniEw", "f4s1h2YETNY", "8--5LwHRhjk", "0ifChJ0nJfM", "BFld4EBO2RE", "jB0vBmiTr6o", "sWblpsLZ-O8", "Y3n3c_8Nn2Y", "iw17c70uJes", "iRkZcTg1JWU", "yHXx3orN35Y", "2SuvO4Gi7uY", "bqtqltqcQhw", "5R9eywArFTE", "yY1FSsUV-8c", "rtR63-ecUNo", "DEqXNfs_HhY", "Zkx1aKv2z8o", "KJe9H6qS82I"]
+  },
+  {
+    "id": "the-web-as-a-design-medium",
+    "name": "The web as a design medium",
+    "description": "How CSS really works, modern layout with Grid and Flexbox, and the architecture, animation and design-system thinking that follows, with a few web-history detours on the way.",
+    "vids": ["aHUtMbJw8iA", "5uhIiI9Ld5M", "FEnRpy9Xfes", "hs3piaN4b5I", "0Gr1XSyxZy0", "qm0IfG1GyZU", "7kVeCqQCxlk", "3ikye7Qc7Ak", "4laPOtTRteI", "TMe0WnkF1Lc", "mDf7OUJobJs", "iYpl0QVCr6U", "R-BX4N8egEc", "1OKZOV-iLj4", "XR6eM_5pAb0", "1W79T2ibd5Y", "rrT6v5sOwJg", "_JhTaENzfZQ", "N-2sKZjawq4", "8JOD1AQGqEg"]
+  }
+]

@@ -1,0 +1,25 @@
+# dependencies & builds
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+.pnpm-debug.log*
+
+# secrets & local config (never commit)
+.env
+.env.*
+!.env.example
+.vercel/
+.claude/
+
+# pipeline working data (hundreds of MB, regenerable; the published dataset is web/data + the zip)
+pipeline/data/
+pipeline/.venv/
+__pycache__/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/

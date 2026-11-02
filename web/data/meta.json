@@ -1,0 +1,47 @@
+{
+ "generated": "2026-11-02",
+ "videos": 1153,
+ "mentions": 8191,
+ "topics": 63,
+ "areas": 17,
+ "years": [
+  "2007",
+  "2026"
+ ],
+ "zip": {
+  "name": "designertube-data.zip",
+  "bytes": 3997952
+ },
+ "files": [
+  {
+   "name": "videos.jsonl",
+   "description": "All 1,153 videos: id, link, title, channel, summary, why HN likes it, type, level, shelf life, topics, categories, pull quote, HN stats and score",
+   "bytes": 1860377
+  },
+  {
+   "name": "mentions.jsonl",
+   "description": "All 8,191 labeled HN comments: id and link, author, month, thread title, stance, why, quote and comment text",
+   "bytes": 6783624
+  },
+  {
+   "name": "taxonomy.json",
+   "description": "The 17 areas and 63 topics, with synonym-rich descriptions",
+   "bytes": 17148
+  },
+  {
+   "name": "related.jsonl",
+   "description": "\"HN people also recommend\" (counts only, no usernames)",
+   "bytes": 125805
+  },
+  {
+   "name": "embeddings.npy",
+   "description": "bge-small search vectors (384 dims) plus embedding_ids.json",
+   "bytes": 1771136
+  },
+  {
+   "name": "DATA.md",
+   "description": "How it was made, every field explained, for agents",
+   "bytes": 5530
+  }
+ ]
+}
