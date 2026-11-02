@@ -2,7 +2,7 @@
 import type { Video } from "./types";
 
 /** Canonical origin. Forks: set NEXT_PUBLIC_SITE_URL to your own domain. */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://designertube.app").replace(/\/$/, "");
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.designertube.app").replace(/\/$/, "");
 export const SITE_NAME = "DesignerTube";
 export const TAGLINE = "The YouTube videos that Hacker News keeps telling designers to watch.";
 

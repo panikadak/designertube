@@ -236,6 +236,8 @@ blockquote.quote-block { margin: 12px 0; }
 .info .facts { font-weight: 500; margin-bottom: 6px; }
 .info p { margin: 0 0 10px; white-space: pre-line; }
 .info .why { color: var(--text-2); }
+.info .chip { background: var(--surface-hover); }
+.info .chip:hover { background: var(--border); filter: brightness(1.25); }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
 .tag-link { color: #3ea6ff; }
 :root[data-theme="light"] .tag-link { color: #065fd4; }

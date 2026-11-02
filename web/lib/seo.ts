@@ -1,8 +1,24 @@
 // schema.org JSON-LD builders. Rendered with <JsonLd> on each page.
+import type { Metadata } from "next";
 import { SITE_NAME, SITE_URL, TAGLINE, absolute, videoPath, ytEmbed, ytThumb } from "./site";
 import type { Mention, Video } from "./types";
 
 type Crumb = { name: string; path: string };
+
+/** Meta description that fits a search snippet: whole sentences up to ~max chars, else words + "…". */
+export function clip(text: string, max = 160) {
+  const t = text.replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  const sentences = t.match(/[^.!?]+[.!?]+(\s|$)/g) ?? [];
+  let out = "";
+  for (const s of sentences) {
+    if ((out + s).trim().length > max) break;
+    out += s;
+  }
+  if (out.trim().length >= max * 0.6) return out.trim();
+  const cut = t.slice(0, max - 1);
+  return `${cut.slice(0, cut.lastIndexOf(" ")).replace(/[\s,;:.-]+$/, "")}…`;
+}
 
 /** ISO 8601 duration, e.g. 3725 -> PT1H2M5S. */
 export function isoDuration(s: number) {
@@ -10,6 +26,32 @@ export function isoDuration(s: number) {
   const m = Math.floor((s % 3600) / 60);
   const sec = s % 60;
   return `PT${h ? `${h}H` : ""}${m ? `${m}M` : ""}${sec || (!h && !m) ? `${sec}S` : ""}`;
+}
+
+/**
+ * Per-page canonical, Open Graph and Twitter tags. Next.js replaces these objects wholesale rather
+ * than merging them with the layout's, so every indexable page sets all of them here.
+ */
+export function pageMeta({
+  path,
+  title,
+  description,
+  type = "website",
+  extra = {},
+}: {
+  path: string;
+  title: string;
+  description: string;
+  type?: "website" | "video.other";
+  extra?: Record<string, unknown>;
+}): Metadata {
+  return {
+    title,
+    description,
+    alternates: { canonical: path },
+    openGraph: { siteName: SITE_NAME, locale: "en_US", type, url: path, title, description, ...extra },
+    twitter: { card: "summary_large_image", title, description },
+  };
 }
 
 export function websiteJsonLd() {

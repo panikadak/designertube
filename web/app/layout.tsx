@@ -10,9 +10,8 @@ export const metadata: Metadata = {
   title: { default: `${SITE_NAME}: design videos Hacker News keeps recommending`, template: `%s - ${SITE_NAME}` },
   description: `${TAGLINE} Over a thousand talks, lectures and documentaries on UX, interaction, typography, design systems and more, ranked by two decades of Hacker News recommendations.`,
   applicationName: SITE_NAME,
-  alternates: { canonical: "/" },
-  openGraph: { siteName: SITE_NAME, type: "website", locale: "en_US", url: "/", title: SITE_NAME, description: TAGLINE },
-  twitter: { card: "summary_large_image", title: SITE_NAME, description: TAGLINE },
+  openGraph: { siteName: SITE_NAME, type: "website", locale: "en_US" },
+  twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-video-preview": -1, "max-snippet": -1 } },
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,

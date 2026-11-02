@@ -1,6 +1,6 @@
 # DesignerTube web
 
-The Next.js 16 site behind [designertube.app](https://designertube.app). See the [project README](../README.md) for how the dataset was built, configuration and deployment.
+The Next.js 16 site behind [designertube.app](https://www.designertube.app). See the [project README](../README.md) for how the dataset was built, configuration and deployment.
 
 ```bash
 pnpm install

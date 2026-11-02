@@ -1,9 +1,9 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { VideoCard } from "@/components/VideoCard";
-import { breadcrumbJsonLd, itemListJsonLd } from "@/lib/seo";
-import { ytThumb } from "@/lib/site";
+import { breadcrumbJsonLd, clip, itemListJsonLd, pageMeta } from "@/lib/seo";
 import { byId, playlists } from "@/lib/data";
 import type { Video } from "@/lib/types";
 
@@ -17,13 +17,8 @@ export async function generateMetadata(props: PageProps<"/p/[id]">): Promise<Met
   const p = playlists().find((p) => p.id === id);
   if (!p) return {};
   const title = `${p.name}: a DesignerTube playlist`;
-  const description = `${p.description} ${p.vids.length} videos, in viewing order.`;
-  return {
-    title,
-    description,
-    alternates: { canonical: `/p/${id}` },
-    openGraph: { url: `/p/${id}`, title, description, images: p.vids[0] ? [{ url: ytThumb(p.vids[0]), width: 480, height: 360 }] : undefined },
-  };
+  const description = clip(`${p.description} ${p.vids.length} videos, in viewing order.`);
+  return pageMeta({ path: `/p/${id}`, title, description });
 }
 
 // Every real path is prerendered; awaiting params outside Suspense lets unknown paths answer
@@ -47,6 +42,9 @@ export default async function PlaylistPage(props: PageProps<"/p/[id]">) {
           { name: p.name, path },
         ])}
       />
+      <nav className="crumbs" aria-label="Breadcrumb" style={{ marginBottom: 12 }}>
+        <Link href="/playlists">Playlists</Link>
+      </nav>
       <h1 className="page-title" style={{ marginBottom: 4 }}>{p.name}</h1>
       <p className="muted" style={{ margin: "0 0 24px", maxWidth: 820 }}>
         {list.length} videos · {p.description}

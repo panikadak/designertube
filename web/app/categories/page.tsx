@@ -1,12 +1,13 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { taxonomy } from "@/lib/data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
+  path: "/categories",
   title: "Design video categories",
   description: "Browse design videos Hacker News recommends by topic: UX and research, interaction design, typography, design systems, service design, industrial design, data visualization, game design and more.",
-  alternates: { canonical: "/categories" },
-};
+});
 
 export default function Categories() {
   const areas = taxonomy().filter((a) => a.count > 0).sort((a, b) => b.count - a.count);

@@ -26,23 +26,25 @@ const CSP = [
   "frame-ancestors 'none'",
 ].join("; ");
 
-const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://designertube.app").replace(/\/$/, "");
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.designertube.app").replace(/\/$/, "");
 const SITE_HOST = new URL(SITE_URL).host;
+const APEX = SITE_HOST.replace(/^www\./, "");
+const OTHER_HOST = SITE_HOST === APEX ? `www.${APEX}` : APEX; // the www/bare variant that is not canonical
 
 const nextConfig: NextConfig = {
   env: { NEXT_PUBLIC_DATA_DATE: DATA_DATE },
   cacheComponents: true,
   partialPrefetching: true,
   // the dataset is read from disk at runtime by the API routes and pages
-  outputFileTracingIncludes: { "/**": ["./data/**"] },
-  // One canonical host: www and, on the deployment that owns SITE_URL's domain, the production
-  // *.vercel.app aliases 308 to it. Previews and forks on their own domains are left alone.
+  outputFileTracingIncludes: { "/**": ["./data/**", "./assets/**"] },
+  // One canonical host: the other www/bare variant and, on the deployment that owns SITE_URL's
+  // domain, the production *.vercel.app aliases 308 to it. Previews and forks are left alone.
   async redirects() {
     const ownsDomain =
       process.env.VERCEL_ENV === "production" &&
-      [SITE_HOST, `www.${SITE_HOST}`].includes(process.env.VERCEL_PROJECT_PRODUCTION_URL ?? "");
+      [APEX, `www.${APEX}`].includes(process.env.VERCEL_PROJECT_PRODUCTION_URL ?? "");
     return [
-      { source: "/:path*", has: [{ type: "host" as const, value: `www.${SITE_HOST}` }], destination: `${SITE_URL}/:path*`, permanent: true },
+      { source: "/:path*", has: [{ type: "host" as const, value: OTHER_HOST }], destination: `${SITE_URL}/:path*`, permanent: true },
       ...(ownsDomain
         ? [{ source: "/:path*", has: [{ type: "host" as const, value: "(?<sub>.+)\\.vercel\\.app" }], destination: `${SITE_URL}/:path*`, permanent: true }]
         : []),

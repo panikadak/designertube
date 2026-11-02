@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { VideoCard } from "@/components/VideoCard";
 import { isLong, videos } from "@/lib/data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
+  path: "/longs",
   title: "Longs: long-form design lectures and documentaries",
   description: "The opposite of Shorts: design lectures, courses, documentaries and long conversations that Hacker News recommends.",
-  alternates: { canonical: "/longs" },
-};
+});
 
 export default function Longs() {
   const list = videos().filter(isLong);

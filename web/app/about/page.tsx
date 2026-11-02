@@ -1,12 +1,13 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { meta } from "@/lib/data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
+  path: "/about",
   title: "About",
   description: "How DesignerTube was built: every Hacker News comment linking YouTube, read and labeled by Claude, filtered to the design videos HN keeps recommending. Data is free to reuse.",
-  alternates: { canonical: "/about" },
-};
+});
 
 const mb = (b: number) => (b >= 1e6 ? `${(b / 1e6).toFixed(1)} MB` : `${Math.round(b / 1e3)} KB`);
 

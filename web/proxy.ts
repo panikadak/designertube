@@ -11,9 +11,19 @@ const playlists = new Set(routes.playlists);
 
 const notFound = (req: NextRequest) => NextResponse.rewrite(new URL("/_404", req.url));
 
+// Generated social images live under the page path, e.g. /watch/{id}/{slug}/opengraph-image/card.
+const IMAGE_ROUTES = new Set(["opengraph-image", "twitter-image"]);
+
 export function proxy(req: NextRequest) {
-  const [section, id, slug, ...rest] = req.nextUrl.pathname.split("/").filter(Boolean);
+  const parts = req.nextUrl.pathname.split("/").filter(Boolean);
+  const image = parts.findIndex((p) => IMAGE_ROUTES.has(p));
+  const [section, id, slug, ...rest] = image === -1 ? parts : parts.slice(0, image);
   if (!id) return NextResponse.next();
+  if (image !== -1) {
+    const known =
+      section === "watch" ? Boolean(videos[id]) : section === "c" ? topics.has(id) : playlists.has(id);
+    return known ? NextResponse.next() : notFound(req);
+  }
 
   if (section === "watch") {
     const vid = aliases[id] ?? id;

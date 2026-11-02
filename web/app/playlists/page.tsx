@@ -1,13 +1,14 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { Thumb } from "@/components/VideoCard";
 import { byId, playlists } from "@/lib/data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
+  path: "/playlists",
   title: "Design video playlists",
   description: "Curated viewing sequences of the design talks Hacker News recommends: start here, the history of the GUI, tools for thought, typography, data visualization, dark patterns and more.",
-  alternates: { canonical: "/playlists" },
-};
+});
 
 export default function Playlists() {
   const map = byId();

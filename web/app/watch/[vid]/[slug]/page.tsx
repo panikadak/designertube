@@ -7,8 +7,8 @@ import { Actions, Comments, Player } from "@/components/Watch";
 import { canonical, mentions, video, videos } from "@/lib/data";
 import { related } from "@/lib/feed";
 import { compact, ago } from "@/lib/format";
-import { breadcrumbJsonLd, videoCrumbs, videoJsonLd } from "@/lib/seo";
-import { slugify, videoPath, ytEmbed, ytThumb } from "@/lib/site";
+import { breadcrumbJsonLd, clip, pageMeta, videoCrumbs, videoJsonLd } from "@/lib/seo";
+import { slugify, videoPath, ytEmbed } from "@/lib/site";
 
 export function generateStaticParams() {
   return videos().map((v) => ({ vid: v.vid, slug: slugify(v.title) }));
@@ -18,21 +18,15 @@ export async function generateMetadata(props: PageProps<"/watch/[vid]/[slug]">):
   const v = video((await props.params).vid);
   if (!v) return {};
   const r = v.hn.recommenders;
-  const description = `${v.summary} Recommended by ${r} Hacker News commenter${r === 1 ? "" : "s"}.`;
-  const image = { url: ytThumb(v.vid, "hqdefault"), width: 480, height: 360, alt: v.title };
+  const description = clip(`${v.summary.split(/(?<=[.!?])\s/)[0]} Recommended by ${r} Hacker News commenter${r === 1 ? "" : "s"}.`, 200);
   return {
-    title: v.title,
-    description,
-    alternates: { canonical: videoPath(v) },
-    openGraph: {
-      type: "video.other",
-      url: videoPath(v),
+    ...pageMeta({
+      path: videoPath(v),
       title: v.title,
       description,
-      images: [image],
-      videos: [{ url: ytEmbed(v.vid), secureUrl: ytEmbed(v.vid), type: "text/html", width: 1280, height: 720 }],
-    },
-    twitter: { card: "summary_large_image", title: v.title, description, images: [image.url] },
+      type: "video.other",
+      extra: { videos: [{ url: ytEmbed(v.vid), secureUrl: ytEmbed(v.vid), type: "text/html", width: 1280, height: 720 }] },
+    }),
     keywords: [...v.tags, ...v.categories.map((c) => c.name)],
   };
 }

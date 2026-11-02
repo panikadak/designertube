@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { VideoCard } from "@/components/VideoCard";
-import { breadcrumbJsonLd, itemListJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, clip, itemListJsonLd, pageMeta } from "@/lib/seo";
 import { inArea, inTopic, taxonomy, topic, videos, yearsBeforeLatest as yearsAgo } from "@/lib/data";
 import type { Video } from "@/lib/types";
 
@@ -59,10 +60,7 @@ export async function generateMetadata(props: PageProps<"/c/[id]">): Promise<Met
   const top = list.slice(0, 3).map((v) => `“${v.title}”`).join(", ");
   const description = `${list.length} ${c.name.toLowerCase()} videos that Hacker News keeps recommending to designers${top ? `, including ${top}` : ""}.`;
   return {
-    title,
-    description: description.length > 300 ? description.slice(0, 297).replace(/\s+\S*$/, "") + "…" : description,
-    alternates: { canonical: `/c/${id}` },
-    openGraph: { url: `/c/${id}`, title, description },
+    ...pageMeta({ path: `/c/${id}`, title, description: clip(description, 200) }),
     robots: list.length ? undefined : { index: false, follow: true },
   };
 }
@@ -80,6 +78,16 @@ export default async function CategoryPage(props: PageProps<"/c/[id]">) {
     <>
       <JsonLd data={itemListJsonLd(c.name, `/c/${id}`, list)} />
       <JsonLd data={breadcrumbJsonLd(crumbs(id, c))} />
+      <nav className="crumbs" aria-label="Breadcrumb" style={{ marginBottom: 12 }}>
+        {crumbs(id, c)
+          .slice(1, -1)
+          .map((b, i) => (
+            <span key={b.path}>
+              {i > 0 && " › "}
+              <Link href={b.path}>{b.name}</Link>
+            </span>
+          ))}
+      </nav>
       <h1 className="page-title" style={{ marginBottom: 4 }}>{c.name}</h1>
       <p className="muted" style={{ margin: "0 0 24px", maxWidth: 820 }}>
         {list.length} videos · {c.description}
